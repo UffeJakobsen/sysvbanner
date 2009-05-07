@@ -1,3 +1,22 @@
+sysvbanner (1.0.15) UNRELEASED; urgency=low
+
+  * fix Standards-Version to be 3.8.1
+  * add build dependency on debhelper 7 (Closes: #526847)
+  * completely redo debian/rules with debhelper 7
+  * add debian/compat
+  * remove README.debian
+  * remove prerm, doubt it's needed anymore
+  * adopt package (Closes: #527153)
+  * remove dependency on bsdmainutils, remove conflict on old version,
+    it is over 10 years old
+  * add misc:Depends dependency
+  * version number is now 1.0.15, making this a (correct) native package
+    - override latest-debian-changelog-entry-changed-to-native
+  * add the phrase 'public domain' to d/copyright to get rid of the
+    lintian wanring
+
+ -- Ryan Niebur <ryanryan52@gmail.com>  Thu, 07 May 2009 00:32:10 -0700
+
 sysvbanner (1.0-14) unstable; urgency=low
 
   * Upload with correct e-Mail address.

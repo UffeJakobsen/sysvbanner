@@ -1,10 +1,4 @@
-CFLAGS=-Wall -O2
 DESTDIR=
-
-INSTOPT= -s
-ifneq (,$(findstring nostrip,$(DEB_BUILD_OPTIONS)))
-INSTOPT=
-endif
 
 BIN=banner
 SRC=$(BIN).c
@@ -14,7 +8,9 @@ $(BIN): $(SRC)
 	$(CC) $(CFLAGS) $^ -o $@ $(LDFLAGS)
 
 install: $(BIN) $(MAN)
-	install $(INSTOPT) -m 755 $(BIN) $(DESTDIR)/usr/bin
+	install -d $(DESTDIR)/usr/bin
+	install -m 755 $(BIN) $(DESTDIR)/usr/bin
+	install -d $(DESTDIR)/usr/share/man/man1
 	install    -m 644 $(MAN) $(DESTDIR)/usr/share/man/man1
 
 clean:
