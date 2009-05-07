@@ -3,6 +3,8 @@ Section: misc
 Priority: optional
 Maintainer: Ryan Niebur <ryanryan52@gmail.com>
 Build-Depends: debhelper (>= 7)
+Vcs-Git: git://git.ryan52.info/git/sysvbanner
+Vcs-Browser: http://git.ryan52.info/?p=sysvbanner;a=summary
 Standards-Version: 3.8.1
 
 Package: sysvbanner

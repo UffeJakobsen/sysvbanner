@@ -14,8 +14,9 @@ sysvbanner (1.0.15) UNRELEASED; urgency=low
     - override latest-debian-changelog-entry-changed-to-native
   * add the phrase 'public domain' to d/copyright to get rid of the
     lintian wanring
+  * add Vcs-* fields
 
- -- Ryan Niebur <ryanryan52@gmail.com>  Thu, 07 May 2009 00:32:10 -0700
+ -- Ryan Niebur <ryanryan52@gmail.com>  Thu, 07 May 2009 00:43:27 -0700
 
 sysvbanner (1.0-14) unstable; urgency=low
 
