@@ -1,0 +1,9 @@
+sysvbanner for DEBIAN
+----------------------
+
+Comments regarding the Package:
+
+I changed the banner character from @ to # (as on Solaris) and
+indented and protoized the source code.
+
+David Frey <david@eos.lugs.ch>, Tue, 4 Feb 1997 22:29:55 +0059
